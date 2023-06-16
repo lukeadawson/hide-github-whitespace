@@ -1,0 +1,20 @@
+[
+    {
+      "id": 1,
+      "priority": 1,
+      "action": {
+        "type": "redirect",
+        "redirect": {
+          "transform": {
+            "queryTransform": {
+              "addOrReplaceParams": [{ "key": "w", "value": "1" }]
+            }
+          }
+        }
+      },
+      "condition": {
+        "urlFilter": "*://github.com/*/*/pull/*/files",
+        "resourceTypes": ["main_frame", "xmlhttprequest"]
+      }
+    }
+  ]
