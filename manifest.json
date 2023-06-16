@@ -1,0 +1,21 @@
+
+{
+  "name": "GitHub Hide Whitespace",
+  "description": "Always hide the whitespace in github pull requests.",
+  "version": "0.6.9",
+  "permissions": ["declarativeNetRequest"],
+  "host_permissions": ["*://github.com/*"],
+  "manifest_version": 3,
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "icons": {
+    "16": "assets/icon16.png",
+    "128": "assets/icon128.png" }
+}
